@@ -17,10 +17,10 @@
         <!--<stagingBufferAge>15</stagingBufferAge>-->
 
       <!-- Uncomment AND configure the lines below to enable upload to S3 -->
-<!--                <s3Bucket>mybucket</s3Bucket>-->
-        <!-- Optional config to define the path (key prefix) to use to create custom folder structure under bucket -->
-        <!-- If not specified, defaults to writing file(s) directly under bucket -->
-        <!--        <s3Path>logs/exampleApplication2/</s3Path>-->
+        <!-- <s3Bucket>mybucket</s3Bucket> -->
+      <!-- Optional config to define the path (key prefix) to use to create custom folder structure under bucket -->
+      <!-- If not specified, defaults to writing file(s) directly under bucket -->
+        <!-- <s3Path>logs/exampleApplication2/</s3Path> -->
 
         <!--<s3Region>us-west-2</s3Region>-->
         <!-- NOTE: Only s3Region above or (s3ServiceEndpoint + s3SigningRegion) below can be used at one time -->
@@ -32,6 +32,11 @@
 
       <!-- Uncomment below to use SSE for S3. NOTE: SSE_S3 is the only supported option right now -->
         <!-- <s3SseKeyType>SSE_S3</s3SseKeyType> -->
+
+      <!-- (Optional) Uncomment to set the pre-configured access control policy to use -->
+      <!-- Allowed values: AuthenticatedRead | AwsExecRead | BucketOwnerFullControl | BucketOwnerRead | LogDeliveryWrite | Private | PublicRead | PublicReadWrite -->
+      <!-- See: https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/CannedAccessControlList.html -->
+        <!-- <s3CannedAcl>BucketOwnerFullControl</s3CannedAcl> -->
 
       <!-- Uncomment AND configure the lines below to enable upload to Azure blob storage -->
         <!-- <azureStorageConnectionString>DefaultEndpointsProtocol=https;AccountName=...;EndpointSuffix=core.windows.net</azureStorageConnectionString> -->
