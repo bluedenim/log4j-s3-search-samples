@@ -19,11 +19,15 @@ Build with:
 ```
 mvn install
 ```
-here or at the top-level subdirectory.
+at the top-level subdirectory.
 
 ## Running
 Once module is built, run the sample program with:
 
 ```
-java -cp target\appender-log4j-sample-1.0.0-SNAPSHOT-shaded.jar com.van.example.Main
+cd appender-log4j-sample
+java -cp target\appender-log4j-sample-1.0.1-shaded.jar com.van.example.Main
 ```
+
+NOTE: You may need to use the correct name for the jar file if the version has changed. This example assumes we are on
+version 1.0.1.
