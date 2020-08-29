@@ -31,7 +31,7 @@ public class Main {
             logger.info("Another round through the loop!");
             logger.warn("This is a warning!");
             logger.error("And this is an error!!!");
-            // Sleep for 7 seconds before logging messages again so we don't produce too much data
+            // Sleep for a few seconds before logging messages again so we don't produce too much data
             Thread.sleep(TimeUnit.SECONDS.toMillis(3));
             now = System.currentTimeMillis();
         }
