@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Example program to exercise the logger.  Together with the log4j.properties
+ * Example program to exercise the logger.  Together with the log4j2.xml
  * in this project, this program will demonstrate logging batches into S3.
  * <br>
  * The program will basically loop for a period of time while logging messages in various
@@ -36,6 +36,10 @@ public class Main {
             now = System.currentTimeMillis();
         }
 
+        // If the program should exit at this point, call LoggingEventCache.shutDown() to shut down and clean up
+        // background threads. Without this, the program will "hang" because a publishing thread (a user thread, not
+        // daemon) is waiting for work in its thread pool.
+        // DO NOT log any more content after calling this; This should be the last statement in the main thread.
         LoggingEventCache.shutDown();
     }
 }
