@@ -4,7 +4,7 @@
   <groupId>com.therealvan</groupId>
   <artifactId>log4j-s3-search-samples</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1</version>
   <name>log4j-s3-search-samples</name>
   <description>Sample programs using Log4j and Log4j with appender-core, appender-log4j, and appender-log4j2 libs.</description>
   <url>https://github.com/bluedenim/log4j-s3-search-samples</url>
@@ -32,6 +32,7 @@
   <properties>
     <file.encoding>UTF-8</file.encoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <log4jS3SearchVersion>2.8.0</log4jS3SearchVersion>
   </properties>
 
   <modules>
@@ -41,6 +42,18 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- Log4j-s3-search -->
+      <dependency>
+        <groupId>com.therealvan</groupId>
+        <artifactId>appender-log4j</artifactId>
+        <version>${log4jS3SearchVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.therealvan</groupId>
+        <artifactId>appender-log4j2</artifactId>
+        <version>${log4jS3SearchVersion}</version>
+      </dependency>
+
       <!-- Storage -->
       <dependency>
         <groupId>com.amazonaws</groupId>

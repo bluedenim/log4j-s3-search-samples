@@ -1,5 +1,6 @@
 package com.van.example;
 
+import com.van.logging.LoggingEventCache;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,17 +22,20 @@ public class Main {
         LogManager.getLogger(Main.class);
 
     public static void main(String[] args) throws InterruptedException {
-
         logger.info("Hello from Main!");
         Long started = System.currentTimeMillis();
         Long now = System.currentTimeMillis();
-        // Loop for 3 minutes
-        while (now - started < TimeUnit.MINUTES.toMillis(3)) {
+
+        // Loop for 15 secs
+        while (now - started < TimeUnit.SECONDS.toMillis(15)) {
             logger.info("Another round through the loop!");
             logger.warn("This is a warning!");
             logger.error("And this is an error!!!");
             // Sleep for 7 seconds before logging messages again so we don't produce too much data
-            Thread.sleep(TimeUnit.SECONDS.toMillis(7));
+            Thread.sleep(TimeUnit.SECONDS.toMillis(3));
+            now = System.currentTimeMillis();
         }
+
+        LoggingEventCache.shutDown();
     }
 }
