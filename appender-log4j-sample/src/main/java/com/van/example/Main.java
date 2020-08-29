@@ -35,6 +35,10 @@ public class Main {
             now = System.currentTimeMillis();
         }
 
+        // If the program should exit at this point, call LoggingEventCache.shutDown() to shut down and clean up
+        // background threads. Without this, the program will "hang" because a publishing thread (a user thread, not
+        // daemon) is waiting for work in its thread pool.
+        // DO NOT log any more content after calling this; This should be the last statement in the main thread.
         LoggingEventCache.shutDown();
     }
 
