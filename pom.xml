@@ -32,7 +32,7 @@
   <properties>
     <file.encoding>UTF-8</file.encoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <log4jS3SearchVersion>2.8.0</log4jS3SearchVersion>
+    <log4jS3SearchVersion>2.8.3</log4jS3SearchVersion>
   </properties>
 
   <modules>
