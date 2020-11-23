@@ -15,15 +15,12 @@ Build with:
 ```
 mvn install
 ```
-at the top-level subdirectory.
+in THIS subdirectory.
 
 ## Running
-Once module is built, run the sample program with:
+Once `mvn install` finishes, run the sample program with:
 
 ```
-cd appender-log4j2-sample
-java -cp target\appender-log4j2-sample-1.0.1-shaded.jar com.van.example.Main
+cd target
+java -cp log4j-s3-search-log4j2-sample.jar com.van.example.Main
 ```
-
-NOTE: You may need to use the correct name for the jar file if the version has changed. This example assumes we are on
-version 1.0.1.
