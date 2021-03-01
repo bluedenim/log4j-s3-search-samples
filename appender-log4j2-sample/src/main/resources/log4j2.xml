@@ -56,10 +56,11 @@
 
 
       <!-- Uncomment AND configure the lines below to enable upload to Elasticsearch -->
-        <!--<elasticsearchHosts>localhost:9300</elasticsearchHosts>-->
+        <!--<elasticsearchHosts>localhost:9200</elasticsearchHosts>-->
         <!--<elasticsearchCluster>elasticsearch</elasticsearchCluster>-->
         <!--<elasticsearchIndex>logindex</elasticsearchIndex>-->
         <!--<elasticsearchType>log</elasticsearchType>-->
+        <!--<elasticSearchPublishHelperClass>com.van.example.MyElasticsearchPublishHelper</elasticSearchPublishHelperClass>-->
 		
     </Log4j2Appender>
   </Appenders>
