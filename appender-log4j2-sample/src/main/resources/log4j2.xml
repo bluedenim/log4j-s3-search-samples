@@ -26,6 +26,7 @@
         <!-- NOTE: Only s3Region above or (s3ServiceEndpoint + s3SigningRegion) below can be used at one time -->
         <!--<s3ServiceEndpoint>...</s3ServiceEndpoint>-->
         <!--<s3SigningRegion>...</s3SigningRegion>-->
+        <!--<s3PathStyleAccess>true</s3PathStyleAccess>-->
 
       <!-- Uncomment below to apply GZIP compression on content sent to S3 -->
         <!--<s3Compression>true</s3Compression>-->
