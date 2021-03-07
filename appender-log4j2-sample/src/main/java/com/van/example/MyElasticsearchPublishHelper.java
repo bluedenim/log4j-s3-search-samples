@@ -7,8 +7,8 @@ import com.van.logging.elasticsearch.ElasticsearchPublishHelper;
 
 
 /**
- * Example of a custom Elasticsearch publish helper. This can be a custom implementation of IPublishHelper<Event> or,
- * more likely, a tweak of the default com.van.logging.elasticsearch.ElasticsearchPublishHelper.
+ * Example of a custom Elasticsearch publish helper. This can be a custom implementation/override of
+ * com.van.logging.elasticsearch.ElasticsearchPublishHelper to interact with Elasticsearch with custom behavior.
  */
 public class MyElasticsearchPublishHelper extends ElasticsearchPublishHelper {
 
