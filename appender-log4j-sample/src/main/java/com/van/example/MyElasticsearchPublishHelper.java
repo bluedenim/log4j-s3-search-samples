@@ -12,8 +12,10 @@ import com.van.logging.elasticsearch.ElasticsearchPublishHelper;
  */
 public class MyElasticsearchPublishHelper extends ElasticsearchPublishHelper {
 
-    public MyElasticsearchPublishHelper(ElasticsearchConfiguration configuration) {
-        super(configuration);
+    @Override
+    public void initialize(ElasticsearchConfiguration configuration) {
+        System.out.printf("INITIALIZE MyElasticsearchPublishHelper...%n");
+        super.initialize(configuration);
     }
 
     @Override
