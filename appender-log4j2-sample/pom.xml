@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.therealvan</groupId>
             <artifactId>appender-log4j2</artifactId>
-            <version>3.3.0</version>
+            <version>3.5.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.logging.log4j</groupId>
