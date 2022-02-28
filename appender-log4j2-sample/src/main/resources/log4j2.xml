@@ -50,6 +50,8 @@
       <!-- Uncomment AND configure the lines below to enable upload to Google Cloud Platform's Storage service -->
         <!-- <gcpStorageBucket>mybucket</gcpStorageBucket> -->
         <!-- <gcpStorageBlobNamePrefix>logs/exampleApplication2/</gcpStorageBlobNamePrefix> -->
+
+      <!-- Uncomment below to apply GZIP compression on content sent to GCP Storage -->
         <!-- <gcpStorageCompressionEnabled>true</gcpStorageCompressionEnabled> -->
 
       <!-- Uncomment AND configure the line below to enable upload to SOLR -->
