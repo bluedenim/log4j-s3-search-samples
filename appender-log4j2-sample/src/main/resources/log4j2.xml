@@ -53,15 +53,15 @@
         <!-- <gcpStorageCompressionEnabled>true</gcpStorageCompressionEnabled> -->
 
       <!-- Uncomment AND configure the line below to enable upload to SOLR -->
-        <!--<solrUrl>http://localhost:8983/solr/gettingstarted/</solrUrl>-->
+<!--        <solrUrl>http://localhost:8983/solr/log4js3/</solrUrl>-->
 
 
       <!-- Uncomment AND configure the lines below to enable upload to Elasticsearch -->
-        <!--<elasticsearchHosts>localhost:9200</elasticsearchHosts>-->
-        <!--<elasticsearchCluster>elasticsearch</elasticsearchCluster>-->
-        <!--<elasticsearchIndex>logindex</elasticsearchIndex>-->
-        <!--<elasticsearchType>log</elasticsearchType>-->
-        <!--<elasticSearchPublishHelperClass>com.van.example.MyElasticsearchPublishHelper</elasticSearchPublishHelperClass>-->
+<!--        <elasticsearchHosts>localhost:9200</elasticsearchHosts>-->
+<!--        <elasticsearchCluster>elasticsearch</elasticsearchCluster>-->
+<!--        <elasticsearchIndex>log4js3</elasticsearchIndex>-->
+<!--        <elasticsearchType>log</elasticsearchType>-->
+<!--        <elasticSearchPublishHelperClass>com.van.example.MyElasticsearchPublishHelper</elasticSearchPublishHelperClass>-->
 		
     </Log4j2Appender>
   </Appenders>
@@ -70,5 +70,8 @@
       <AppenderRef ref="ConsoleAppender" />
       <AppenderRef ref="Log4j2Appender" />
     </Root>
+    <Logger name="com.van.logging" level="debug" additivity="false">
+      <AppenderRef ref="ConsoleAppender" />
+    </Logger>
   </Loggers>
 </Configuration>
