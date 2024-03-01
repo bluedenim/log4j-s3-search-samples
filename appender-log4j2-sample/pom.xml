@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.therealvan</groupId>
     <artifactId>appender-log4j2-sample</artifactId>
-    <version>4.1.0</version>
+    <version>5.2.0</version>
     <name>appender-log4j2-sample</name>
     <description>Example of a program using log4j-s3-search-appender with Log4j 2.x</description>
 
@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.therealvan</groupId>
             <artifactId>appender-log4j2</artifactId>
-            <version>4.1.0</version>
+            <version>5.2.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.logging.log4j</groupId>
