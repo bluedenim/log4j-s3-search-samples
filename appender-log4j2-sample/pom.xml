@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.therealvan</groupId>
     <artifactId>appender-log4j2-sample</artifactId>
-    <version>5.2.0</version>
+    <version>5.4.0-SNAPSHOT</version>
     <name>appender-log4j2-sample</name>
     <description>Example of a program using log4j-s3-search-appender with Log4j 2.x</description>
 
@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.therealvan</groupId>
             <artifactId>appender-log4j2</artifactId>
-            <version>5.2.0</version>
+            <version>5.4.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.logging.log4j</groupId>
@@ -24,8 +24,12 @@
                     <artifactId>aws-java-sdk-s3</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>com.microsoft.azure</groupId>
-                    <artifactId>azure-storage</artifactId>
+                    <groupId>com.azure</groupId>
+                    <artifactId>azure-storage-blob</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.azure</groupId>
+                    <artifactId>azure-core-http-netty</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.apache.solr</groupId>
@@ -59,9 +63,14 @@
         </dependency>
 
         <dependency>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>azure-storage</artifactId>
-            <version>8.6.6</version>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-storage-blob</artifactId>
+            <version>12.29.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-core-http-netty</artifactId>
+            <version>1.15.7</version>
         </dependency>
 
         <dependency>
