@@ -18,10 +18,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: cd to project
-      run: cd appender-log4j-sample
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    - name: cd to project and build
+      run: cd appender-log4j-sample && mvn -B package --file pom.xml
   build-appender-log4j2-sample:
     runs-on: ubuntu-latest
     steps:
@@ -30,7 +28,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: cd to project
-      run: cd appender-log4j2-sample
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    - name: cd to project and build
+      run: cd appender-log4j2-sample && mvn -B package --file pom.xml
