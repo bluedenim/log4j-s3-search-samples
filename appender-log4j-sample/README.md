@@ -16,7 +16,7 @@ example module (appender-log4j2-sample) is also in this repository.
 Be sure to modify the `log4j.properties` file to configure whatever appender you want to test.
 
 ### Use Docker
-Because the code base and environment is quite dated, build (in this subidectory) and use the configured Docker environment (OpenJDK 11) to build:
+Because the code base and environment are both quite dated, use the configured Docker environment (OpenJDK 11) to build:
 ```
 docker-compose build
 docker-compose run --rm app /bin/bash
