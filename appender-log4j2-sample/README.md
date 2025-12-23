@@ -22,5 +22,5 @@ Once `mvn install` finishes, run the sample program with:
 
 ```
 cd target
-java -cp log4j-s3-search-log4j2-sample.jar com.van.example.Main
+java -cp <shaded jar> com.van.example.Main
 ```
